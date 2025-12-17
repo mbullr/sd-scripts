@@ -113,11 +113,11 @@ esac
      echo -e "\e[0m"
      case $md in
          [mM] ) echo "Installing the main version"
-                git clone -b main https://github.com/stringdatabase/sdb64;;
+                git clone -b main $REPO_URL;;
          [dD] ) echo "Installing the development version"
-                git clone -b dev https://github.com/stringdatabase/sdb64;;
+                git clone -b dev $REPO_URL;;
          * )    echo "Installing the main version"
-                git clone -b main https://github.com/stringdatabase/sdb64;;
+                git clone -b main $REPO_URL;;
      esac
  else
      echo -e "\e[91m"
@@ -184,7 +184,7 @@ case $yn in
     [yY] )  echo "Copying TAPE and RESTORE programs to GPL.BP."
          sudo cp tape/GPL.BP/* /usr/local/sdsys/GPL.BP
          echo "Copying TAPE and RESTORE verbs to VOC."
-         sudo cp -R tape/VOC/* /usr/local/sdsys/VOC
+         sudo cp -R tape/VOC/* /usr/local/sdsys/VOC_TEMPLATE
          echo ;;
 esac
 
