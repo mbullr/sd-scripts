@@ -87,7 +87,7 @@ echo -e "\e[0m"
  #          is_debian=1;;
  #  esac
 
- else
+ # else
  # a derivative of debian or fedora
  #  case $id_like in
  #      "debian" ) echo "Distro is: "$distro "."
