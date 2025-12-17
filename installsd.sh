@@ -102,6 +102,7 @@ esac
 
  # check that sdb64 repository is accessible
  REPO_URL="https://github.com/stringdatabase/sdb64" # Replace with the actual repository URL
+ echo "using repo at: $REPO_URL"
  # Attempt to list remote references silently
  git ls-remote -q "$REPO_URL" &>/dev/null
  # Check the exit status of the previous command
